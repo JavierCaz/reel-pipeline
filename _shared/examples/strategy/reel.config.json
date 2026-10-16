@@ -1,0 +1,441 @@
+{
+  "_example": "Worked example (data only, no footage): the config of a finished reel. Read it with scenes.py; do not run it.",
+  "_doc": "All per-reel pipeline data. Reference: _shared/pipeline/README.md. Fields starting with _ are notes.",
+  "id": "strategy",
+  "visual_prefix": "st-vis",
+  "title": "Strategy",
+  "language": "es",
+  "fps": 30,
+  "order_note": "ascending filename timestamp (confirmed against the script: 16 single takes in section order; 20261006_113720.mp4 opens)",
+  "opening_title": [
+    "Patrones de Diseño #4: Strategy"
+  ],
+  "trim": {
+    "pre_roll": 0.08,
+    "post_roll": 0.1,
+    "activity_db": -28.0,
+    "strong_db": -16.0,
+    "overrides": {
+      "16": {
+        "source_out": 11.45,
+        "reason": "'software' ends ~10.75 s; keep ~0.7 s of quiet tail (< -60 dB) for the outro curtain; the handling noise from 11.5 s stays out."
+      }
+    },
+    "_overrides_example": {
+      "24": {
+        "source_out": 6.9,
+        "reason": "non-speech burst after the last word"
+      }
+    }
+  },
+  "transcript_fixes": {
+    "replace": [
+      [
+        15,
+        "Código",
+        "código",
+        "lowercase mid-sentence"
+      ]
+    ],
+    "merge": [
+      [
+        9,
+        [
+          "cálculo",
+          "la",
+          "ruta."
+        ],
+        "calcularRuta()."
+      ]
+    ],
+    "insert": []
+  },
+  "camera": {
+    "1": {
+      "reason": "Hook: settle from the shake, punch on the closing word.",
+      "beats": [
+        [
+          "transporte.",
+          "punch"
+        ]
+      ]
+    },
+    "2": {
+      "reason": "Rhythmic steps on each transport, punch on Uber.",
+      "beats": [
+        [
+          "pie.",
+          "step"
+        ],
+        [
+          "camión.",
+          "step"
+        ],
+        [
+          "Uber.",
+          "punch"
+        ]
+      ]
+    },
+    "3": {
+      "reason": "Push on the shared need, pull as the answer broadens.",
+      "beats": [
+        [
+          "misma,",
+          "push"
+        ],
+        [
+          "depende",
+          "pull"
+        ]
+      ]
+    },
+    "4": {
+      "reason": "Priority line: each option is a strategy.",
+      "beats": [
+        [
+          "estrategia",
+          "hit"
+        ]
+      ]
+    },
+    "5": {
+      "reason": "Pattern reveal: hit on 'Strategy', push on the category.",
+      "beats": [
+        [
+          "Strategy",
+          "hit"
+        ],
+        [
+          "comportamiento.",
+          "push"
+        ]
+      ]
+    },
+    "6": {
+      "reason": "Pullback on the options, punch on choosing.",
+      "beats": [
+        [
+          "definir",
+          "pull"
+        ],
+        [
+          "elegir",
+          "punch"
+        ]
+      ]
+    },
+    "7": {
+      "reason": "Maps example; small steps on each mode.",
+      "beats": [
+        [
+          "mapa",
+          "push"
+        ],
+        [
+          "pie,",
+          "step"
+        ],
+        [
+          "público",
+          "step"
+        ],
+        [
+          "auto.",
+          "step"
+        ]
+      ]
+    },
+    "8": {
+      "reason": "Different calculations, same goal.",
+      "beats": [
+        [
+          "diferente,",
+          "pull"
+        ],
+        [
+          "objetivo,",
+          "punch"
+        ]
+      ]
+    },
+    "9": {
+      "reason": "Into the code; hit on the shared method.",
+      "beats": [
+        [
+          "código,",
+          "push"
+        ],
+        [
+          "método.",
+          "hit"
+        ],
+        [
+          "calcularRuta().",
+          "step"
+        ]
+      ]
+    },
+    "10": {
+      "reason": "The app delegates; pull on 'detalles'.",
+      "beats": [
+        [
+          "elegida",
+          "push"
+        ],
+        [
+          "detalles",
+          "pull"
+        ]
+      ]
+    },
+    "11": {
+      "reason": "Conditional tower: punch, then steps on each question.",
+      "beats": [
+        [
+          "condiciones.",
+          "punch"
+        ],
+        [
+          "camión,",
+          "step"
+        ],
+        [
+          "pie,",
+          "step"
+        ],
+        [
+          "auto.",
+          "step"
+        ]
+      ]
+    },
+    "12": {
+      "reason": "Priority benefit: hit on Strategy, punch on 'fácil'.",
+      "beats": [
+        [
+          "Strategy,",
+          "hit"
+        ],
+        [
+          "separada,",
+          "push"
+        ],
+        [
+          "fácil",
+          "punch"
+        ]
+      ]
+    },
+    "13": {
+      "reason": "Quick list of other uses.",
+      "beats": [
+        [
+          "pago,",
+          "step"
+        ],
+        [
+          "resultado",
+          "step"
+        ],
+        [
+          "descuento.",
+          "push"
+        ]
+      ]
+    },
+    "14": {
+      "reason": "Recap: push on separating, punch on the fit.",
+      "beats": [
+        [
+          "separarlas",
+          "push"
+        ],
+        [
+          "encaje.",
+          "punch"
+        ]
+      ]
+    },
+    "15": {
+      "reason": "Analogy returns; hit on 'estrategias'.",
+      "beats": [
+        [
+          "ciudad,",
+          "pull"
+        ],
+        [
+          "estrategias.",
+          "hit"
+        ]
+      ]
+    },
+    "16": {
+      "reason": "CTA, casual.",
+      "beats": [
+        [
+          "proyecto",
+          "push"
+        ],
+        [
+          "comentarios.",
+          "step"
+        ],
+        [
+          "sígueme",
+          "punch"
+        ]
+      ]
+    }
+  },
+  "opening": {
+    "shake": true,
+    "sound": "vortex"
+  },
+  "transitions": [
+    {
+      "before_clip": 5,
+      "kind": "spin-zoom-in",
+      "sound": "flame",
+      "note": "Analogy -> pattern presentation"
+    },
+    {
+      "before_clip": 7,
+      "kind": "swipe",
+      "sound": "page-turn",
+      "note": "Pattern -> maps-app example"
+    },
+    {
+      "before_clip": 9,
+      "kind": "zoom",
+      "sound": "whoosh",
+      "note": "Example -> code"
+    },
+    {
+      "before_clip": 11,
+      "kind": "swipe-reverse",
+      "sound": "page-turn",
+      "note": "Code -> benefit (without the pattern)"
+    },
+    {
+      "before_clip": 13,
+      "kind": "spin",
+      "sound": "transition-2",
+      "note": "Benefit -> other applications"
+    },
+    {
+      "before_clip": 14,
+      "kind": "spin-zoom-out",
+      "sound": "flame",
+      "note": "Applications -> closing recap"
+    },
+    {
+      "before_clip": 16,
+      "kind": "swipe",
+      "sound": "page-turn",
+      "note": "Closing -> CTA"
+    }
+  ],
+  "_transition_kinds": "swipe, swipe-reverse, zoom, spin, spin-zoom-in, spin-zoom-out, hard-cut; sounds: page-turn, flame, whoosh, transition-2",
+  "captions": {
+    "animation": "kinetic",
+    "keywords": [
+      "Strategy",
+      "estrategia",
+      "comportamiento",
+      "método",
+      "calcularRuta()",
+      "condiciones",
+      "separada",
+      "estrategias"
+    ],
+    "_style": "font, colours, and size come from the visuals theme; override with accent, font, weight, letter_spacing, font_size"
+  },
+  "visuals": {
+    "_note": "terminal-light: the portfolio's light theme (user request 2026-10-06); dark house style is \"terminal\".",
+    "theme": "terminal-light"
+  },
+  "outro": {
+    "_doc": "End card after the last word: curtain, $ whoami, handles, website. Remove to end on the presenter.",
+    "duration": 4.5,
+    "overlap": 0.6,
+    "_overlap": "the curtain starts this long before the footage ends and needs 0.54 s to cover; leave >= 0.6 s of quiet after the last word (trim.overrides)",
+    "name": "Your Name",
+    "handles": [
+      [
+        "Instagram",
+        "@your_handle"
+      ],
+      [
+        "TikTok",
+        "@your_handle"
+      ]
+    ],
+    "website": "yourwebsite.com"
+  },
+  "music": {
+    "preset": "lofi",
+    "volume": 0.2,
+    "fade_out": 1.2
+  },
+  "cover": {
+    "_doc": "Step 9 (npm run build -- cover): renders/strategy-cover.png. Illustration: cover(c) in scripts/scenes.py.",
+    "kicker": "Patrones de Diseño #4",
+    "title": [
+      "Strategy"
+    ],
+    "subtitle": [
+      "distintas formas de",
+      "moverte por tu ciudad"
+    ],
+    "frame": {
+      "time": 19.0
+    },
+    "frame_top": 420
+  },
+  "stage": [
+    {
+      "mode": "circle",
+      "from": [
+        6,
+        "Nos"
+      ],
+      "to": [
+        6,
+        "necesidades."
+      ],
+      "note": "Task → three ways diagram takes the frame; face in a circle",
+      "region": [
+        110,
+        720,
+        640,
+        640
+      ]
+    },
+    {
+      "mode": "card",
+      "from": [
+        7,
+        "Por"
+      ],
+      "to": [
+        8,
+        "llegar."
+      ],
+      "note": "Full-width map app; presenter in a floating card"
+    },
+    {
+      "mode": "circle",
+      "from": [
+        9,
+        "En"
+      ],
+      "to": [
+        10,
+        "esta."
+      ],
+      "note": "Code diagram with the face in a circle (clip 9 takeover felt empty; user 2026-10-06); starts on clip 9's first word so the card morphs straight into the circle (user 2026-10-06)"
+    }
+  ],
+  "_stage_modes": "card, circle, takeover (presenter layouts over the backdrop), cutout (alpha matte above the graphics; npm run build -- matte). from/to = [clip, word as in transcript.json]; optional lead/tail (s), from_clip_start, to_clip_end."
+}

@@ -1,0 +1,476 @@
+{
+  "_example": "Worked example (data only, no footage): the config of a finished reel. Read it with scenes.py; do not run it.",
+  "id": "celular-escucha",
+  "visual_prefix": "ce-vis",
+  "title": "CelularEscucha",
+  "language": "es",
+  "fps": 30,
+  "order_note": "ascending filename timestamp (single-prompt default; 20261002_204950.mp4 opens)",
+  "opening_title": [
+    "Tu celular no te escucha",
+    "no lo necesita para leer tu mente"
+  ],
+  "trim": {
+    "pre_roll": 0.08,
+    "post_roll": 0.1,
+    "activity_db": -28.0,
+    "strong_db": -16.0,
+    "overrides": {
+      "24": {
+        "source_out": 7.45,
+        "reason": "'Nos vemos' ends ~6.45 s; keep 1 s of quiet tail (-27 to -37 dB) for the outro curtain to cover; the non-speech burst at 7.8-8.1 s stays out."
+      }
+    }
+  },
+  "transcript_fixes": {
+    "replace": [
+      [
+        2,
+        "probablemente",
+        "Probablemente",
+        "sentence start"
+      ],
+      [
+        6,
+        "¿Qué",
+        "Qué",
+        "no closing question is spoken"
+      ],
+      [
+        6,
+        "esquipeas,",
+        "skipeas,",
+        "spoken anglicism 'skip'"
+      ],
+      [
+        6,
+        "cuenta",
+        "cuentas",
+        "plural -s merges into 'sigues'; needs listening review"
+      ],
+      [
+        12,
+        "interes",
+        "intereses",
+        "ASR truncated the ending; needs listening review"
+      ],
+      [
+        24,
+        "indagemos",
+        "indaguemos",
+        "spelling"
+      ],
+      [
+        24,
+        "hazmelo",
+        "házmelo",
+        "accent"
+      ]
+    ],
+    "merge": [
+      [
+        24,
+        [
+          "finger",
+          "printing,"
+        ],
+        "fingerprinting,"
+      ]
+    ],
+    "insert": [
+      {
+        "clip": 3,
+        "before": "necesita",
+        "text": "no",
+        "start": 14.24,
+        "end": 14.34,
+        "previous_text": "no,",
+        "why": "energy scan shows a second short 'no' at 14.24-14.34 s; the full-cut Parakeet pass also heard 'no, no necesita'"
+      }
+    ]
+  },
+  "camera": {
+    "1": {
+      "reason": "Hook: settle from the shake, punch toward the end of the sentence.",
+      "beats": [
+        [
+          "publicidad",
+          "punch"
+        ]
+      ]
+    },
+    "2": {
+      "reason": "The microphone suspicion; push in on 'escuchando'.",
+      "beats": [
+        [
+          "escuchando.",
+          "push"
+        ]
+      ]
+    },
+    "3": {
+      "reason": "Reveal setup, then the priority line 'no necesita escucharte'.",
+      "beats": [
+        [
+          "interesante,",
+          "push"
+        ],
+        [
+          "necesita",
+          "hit"
+        ]
+      ]
+    },
+    "4": {
+      "reason": "Neutral framing while the myth is stated.",
+      "beats": [
+        [
+          "micrófono",
+          "step"
+        ],
+        [
+          "publicidad",
+          "push"
+        ]
+      ]
+    },
+    "5": {
+      "reason": "Careful nuance, then a pullback as the idea broadens.",
+      "beats": [
+        [
+          "sería",
+          "pull"
+        ]
+      ]
+    },
+    "6": {
+      "reason": "Neutral start; small lateral steps on the enumeration.",
+      "beats": [
+        [
+          "Qué",
+          "step"
+        ],
+        [
+          "skipeas,",
+          "step"
+        ],
+        [
+          "like",
+          "step"
+        ],
+        [
+          "sigues.",
+          "step"
+        ]
+      ]
+    },
+    "7": {
+      "reason": "Signals gather; punch on 'perfil'.",
+      "beats": [
+        [
+          "juntar",
+          "push"
+        ],
+        [
+          "perfil.",
+          "punch"
+        ]
+      ]
+    },
+    "8": {
+      "reason": "Rhythmic steps on each profile trait.",
+      "beats": [
+        [
+          "hábitos,",
+          "step"
+        ],
+        [
+          "horarios,",
+          "step"
+        ],
+        [
+          "patrones",
+          "step"
+        ]
+      ]
+    },
+    "9": {
+      "reason": "Slow push on inference.",
+      "beats": [
+        [
+          "explícitamente",
+          "push"
+        ]
+      ]
+    },
+    "10": {
+      "reason": "Subtle punch on the turn, strongest line on 'grupo de personas'.",
+      "beats": [
+        [
+          "interesante.",
+          "punch"
+        ],
+        [
+          "grupo",
+          "hit"
+        ]
+      ]
+    },
+    "11": {
+      "reason": "Pullback while the larger population is introduced.",
+      "beats": [
+        [
+          "miles",
+          "pull"
+        ],
+        [
+          "producto.",
+          "push"
+        ]
+      ]
+    },
+    "12": {
+      "reason": "Push toward the viewer on 'tú también'.",
+      "beats": [
+        [
+          "tú",
+          "punch"
+        ]
+      ]
+    },
+    "13": {
+      "reason": "Normal framing; drift into the coffee chain.",
+      "beats": [
+        [
+          "café.",
+          "push"
+        ]
+      ]
+    },
+    "14": {
+      "reason": "Pullback to connect the individual with similar people.",
+      "beats": [
+        [
+          "personas",
+          "pull"
+        ]
+      ]
+    },
+    "15": {
+      "reason": "Punch on 'cliente potencial'.",
+      "beats": [
+        [
+          "cliente",
+          "punch"
+        ]
+      ]
+    },
+    "16": {
+      "reason": "Slower pacing; ease into the curious part.",
+      "beats": [
+        [
+          "curioso.",
+          "push"
+        ],
+        [
+          "publicidad",
+          "step"
+        ]
+      ]
+    },
+    "17": {
+      "reason": "Punch on 'leyeron la mente'.",
+      "beats": [
+        [
+          "perspectiva",
+          "push"
+        ],
+        [
+          "leyeron",
+          "punch"
+        ]
+      ]
+    },
+    "18": {
+      "reason": "Hard cut into the reveal; strong punch on 'predicción'.",
+      "beats": [
+        [
+          "predicción.",
+          "hit"
+        ]
+      ],
+      "initial_scale": 1.02
+    },
+    "19": {
+      "reason": "Neutral, then slow push on 'probabilidad'.",
+      "beats": [
+        [
+          "probabilidad",
+          "push"
+        ]
+      ]
+    },
+    "20": {
+      "reason": "Slight punch on 'flanco equivocado'.",
+      "beats": [
+        [
+          "flanco",
+          "punch"
+        ]
+      ]
+    },
+    "21": {
+      "reason": "Slow delivery; push on 'observar lo que haces'.",
+      "beats": [
+        [
+          "observar",
+          "push"
+        ]
+      ]
+    },
+    "22": {
+      "reason": "Priority close: punch on 'no leen tu mente', push on 'construyen'.",
+      "beats": [
+        [
+          "leen",
+          "hit"
+        ],
+        [
+          "construyen",
+          "push"
+        ]
+      ]
+    },
+    "23": {
+      "reason": "Casual tone returns.",
+      "beats": [
+        [
+          "seguimiento",
+          "step"
+        ]
+      ]
+    },
+    "24": {
+      "reason": "Slow pullback to signal the end.",
+      "beats": [
+        [
+          "fingerprinting,",
+          "push"
+        ],
+        [
+          "Eso",
+          "pull"
+        ]
+      ]
+    }
+  },
+  "opening": {
+    "shake": true,
+    "sound": "vortex"
+  },
+  "transitions": [
+    {
+      "before_clip": 4,
+      "kind": "zoom",
+      "sound": "whoosh",
+      "note": "Hook -> microphone theory; brief: zoom into the phone"
+    },
+    {
+      "before_clip": 6,
+      "kind": "swipe",
+      "sound": "page-turn",
+      "note": "Microphone theory -> behavioural signals"
+    },
+    {
+      "before_clip": 7,
+      "kind": "spin-zoom-in",
+      "sound": "flame",
+      "note": "Signals -> profile; brief: data merge"
+    },
+    {
+      "before_clip": 10,
+      "kind": "zoom",
+      "sound": "transition-2",
+      "note": "Profile -> people like you; brief: zoom out to many profiles"
+    },
+    {
+      "before_clip": 13,
+      "kind": "swipe-reverse",
+      "sound": "page-turn",
+      "note": "Cluster -> coffee example"
+    },
+    {
+      "before_clip": 16,
+      "kind": "spin",
+      "sound": "transition-2",
+      "note": "Coffee example -> mind-reading feeling"
+    },
+    {
+      "before_clip": 18,
+      "kind": "hard-cut",
+      "note": "Mind reading -> reveal; the brief asks for a clean hard cut (camera starts wide at 1.02, then the 'predicción' hit)"
+    },
+    {
+      "before_clip": 20,
+      "kind": "zoom",
+      "sound": "whoosh",
+      "note": "Reveal -> closing; brief: minimal, cleaner"
+    },
+    {
+      "before_clip": 23,
+      "kind": "swipe",
+      "sound": "page-turn",
+      "note": "Closing -> CTA"
+    }
+  ],
+  "captions": {
+    "animation": "kinetic",
+    "keywords": [
+      "micrófono",
+      "publicidad",
+      "señales",
+      "perfil",
+      "datos",
+      "patrón",
+      "probabilidad",
+      "predicción",
+      "algoritmo",
+      "modelo",
+      "fingerprinting",
+      "escucharte",
+      "mente"
+    ]
+  },
+  "visuals": {
+    "_note": "House style (terminal theme). Palette, font, and caption style come from the theme defaults in _shared/pipeline/presets.py; add keys here only to override.",
+    "theme": "terminal"
+  },
+  "music": {
+    "preset": "lofi",
+    "volume": 0.2,
+    "fade_out": 1.2,
+    "intro": {
+      "src": "media/audio/shared-music/intro.mp4",
+      "volume": 0.17,
+      "until": "first_transition",
+      "crossfade": 0.8,
+      "_note": "Mysterious hook bed (user request 2026-10-05). intro.mp4 is ~4 dB hotter than the lofi, so 0.17 matches the bed's level under the voice."
+    }
+  },
+  "outro": {
+    "duration": 4.5,
+    "name": "Your Name",
+    "handles": [
+      [
+        "Instagram",
+        "@your_handle"
+      ],
+      [
+        "TikTok",
+        "@your_handle"
+      ]
+    ],
+    "website": "yourwebsite.com",
+    "overlap": 0.6
+  }
+}

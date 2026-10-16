@@ -1,0 +1,181 @@
+{
+  "_doc": "All per-reel pipeline data. Reference: _shared/pipeline/README.md. Fields starting with _ are notes.",
+  "id": "my-topic",
+  "visual_prefix": "mt-vis",
+  "title": "MyTopic",
+  "language": "es",
+  "fps": 30,
+  "order_note": "ascending filename timestamp",
+  "opening_title": [
+    "Exact title line 1,",
+    "exact title line 2"
+  ],
+  "trim": {
+    "pre_roll": 0.08,
+    "post_roll": 0.1,
+    "activity_db": -28.0,
+    "strong_db": -16.0,
+    "overrides": {},
+    "_overrides_example": {
+      "24": {
+        "source_out": 6.9,
+        "reason": "non-speech burst after the last word"
+      }
+    }
+  },
+  "transcript_fixes": {
+    "replace": [],
+    "merge": [],
+    "insert": [],
+    "_example": {
+      "replace": [
+        [
+          6,
+          "esquipeas,",
+          "skipeas,",
+          "spoken anglicism"
+        ]
+      ],
+      "merge": [
+        [
+          24,
+          [
+            "finger",
+            "printing,"
+          ],
+          "fingerprinting,"
+        ]
+      ],
+      "insert": [
+        {
+          "clip": 3,
+          "before": "necesita",
+          "text": "no",
+          "start": 14.24,
+          "end": 14.34,
+          "previous_text": "no,",
+          "why": "energy scan shows a second 'no'"
+        }
+      ]
+    }
+  },
+  "camera": {},
+  "_camera_example": {
+    "3": {
+      "reason": "priority line",
+      "beats": [
+        [
+          "interesante,",
+          "push"
+        ],
+        [
+          "necesita",
+          "hit"
+        ]
+      ]
+    },
+    "18": {
+      "reason": "after a hard cut",
+      "initial_scale": 1.02,
+      "beats": [
+        [
+          "predicción.",
+          "hit"
+        ]
+      ]
+    }
+  },
+  "opening": {
+    "shake": true,
+    "sound": "vortex"
+  },
+  "transitions": [],
+  "_transitions_example": [
+    {
+      "before_clip": 4,
+      "kind": "zoom",
+      "sound": "whoosh",
+      "note": "hook -> section 2"
+    },
+    {
+      "before_clip": 18,
+      "kind": "hard-cut",
+      "note": "the brief asks for a clean cut"
+    }
+  ],
+  "_transition_kinds": "swipe, swipe-reverse, zoom, spin, spin-zoom-in, spin-zoom-out, hard-cut; sounds: page-turn, flame, whoosh, transition-2",
+  "captions": {
+    "keywords": [],
+    "_style": "font, colours, and size come from the visuals theme; override with accent, font, weight, letter_spacing, font_size"
+  },
+  "visuals": {
+    "theme": "terminal",
+    "_themes": "terminal = house style (dark grid paper, lime #b8ff35, JetBrains Mono, hard shadows); terminal-light = its light variant (light theme: warm paper, green #356e00, black hard shadows; caption keywords on dark-green paper chips); glass = frosted light panel, Montserrat",
+    "_overrides": "optional: palette {ink, primary, accent, warm, soft, paper, alert, muted, hot}, font, grid (px), tints, panel"
+  },
+  "outro": {
+    "_doc": "End card after the last word: curtain, $ whoami, handles, website. Remove to end on the presenter.",
+    "duration": 4.5,
+    "overlap": 0.6,
+    "_overlap": "the curtain starts this long before the footage ends and needs 0.54 s to cover; leave >= 0.6 s of quiet after the last word (trim.overrides)",
+    "name": "Your Name",
+    "handles": [
+      [
+        "Instagram",
+        "@your_handle"
+      ],
+      [
+        "TikTok",
+        "@your_handle"
+      ]
+    ],
+    "website": "yourwebsite.com"
+  },
+  "music": {
+    "preset": "lofi",
+    "volume": 0.2,
+    "fade_out": 1.2
+  },
+  "stage": [],
+  "_stage_example": [
+    {
+      "mode": "card",
+      "from": [
+        7,
+        "Por"
+      ],
+      "to": [
+        8,
+        "llegar."
+      ],
+      "note": "multi-element example beside the floating card"
+    },
+    {
+      "mode": "square",
+      "from": [
+        9,
+        "En"
+      ],
+      "to": [
+        10,
+        "esta."
+      ],
+      "note": "face in the default square; contiguous with the card above, so it morphs straight in"
+    }
+  ],
+  "_stage_doc": "Animation-led moments (template AGENTS step 6): square (default face layout) | card | circle (on request) | takeover; from/to = [clip, word as in transcript.json]; optional lead, tail, from_clip_start, to_clip_end, region [x,y,w,h], focus [x,y]. cutout is opt-in only.",
+  "cover": {
+    "_doc": "Step 9: npm run build -- cover → renders/<id>-cover.png. Title lines default to opening_title; illustration: def cover(c) in scripts/scenes.py.",
+    "kicker": "Series #N",
+    "title": [
+      "Title line 1",
+      "title line 2"
+    ],
+    "subtitle": "one-line promise",
+    "frame": {
+      "clip": 1,
+      "at": 1.5
+    },
+    "frame_top": 420
+  }
+}

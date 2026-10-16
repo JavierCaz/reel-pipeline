@@ -1,0 +1,13 @@
+{
+  "name": "reel-pipeline",
+  "private": true,
+  "type": "module",
+  "description": "Turn raw talking-head clips into finished vertical reels with Claude Code and HyperFrames.",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "setup": "node scripts/setup.mjs",
+    "new-reel": "node scripts/new-reel.mjs"
+  }
+}

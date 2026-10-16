@@ -1,0 +1,20 @@
+# Generated outputs
+**/renders/*
+!**/renders/.gitkeep
+**/.cache/*
+!**/.cache/.gitkeep
+**/.waveform-cache/*
+**/.thumbnails/*
+**/chrome-headless-shell/*
+**/.hyperframes/preview/*
+**/.hyperframes/backup/*
+
+# Your reels and downloaded audio stay local
+Shorts/*
+!Shorts/.gitkeep
+_shared/music/*
+!_shared/music/README.md
+_shared/sfx/*
+!_shared/sfx/README.md
+node_modules/
+__pycache__/

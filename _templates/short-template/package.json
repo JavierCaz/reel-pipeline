@@ -1,0 +1,11 @@
+{
+  "name": "my-topic",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node ../../scripts/py.mjs ../../_shared/pipeline/build.py",
+    "check": "npx --yes hyperframes@0.8.92 check",
+    "preview": "npx --yes hyperframes@0.8.92 preview",
+    "render": "npx --yes hyperframes@0.8.92 render --frames-cache-dir .cache/frames-cache"
+  }
+}
